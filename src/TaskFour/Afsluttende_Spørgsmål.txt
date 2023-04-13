@@ -1,0 +1,10 @@
+En instance of metode er en instans af en Abstract klasse.
+Abstract klasser skal og kan ikke instantieres. De bruges til at beskrive en "type" klasser f.eks. Frugt.
+Når vi laver en Abstract klasser der indeholder atributter forventer alle dens subklasser(f.eks. Apple, Orange) at gøre brug af disse.
+vis vi vil kræve at metoder i Abstract klassen skal bruges af dens subklasser, skal metoderne også defineres som Abstract og være tomme. Her bruges @Overide i subklasserne, hvis @Overide bruges vil Compileren give en fejl hvis metoden ikke ordentlig overide metoden fra superklassen(f.eks. metoden er stavet forkert).
+
+Med interface klasser kan man kræve at subklasser deler værdier med den interface klasse der er implementeret, derfor bruger vi ofte interface klasser til at definere tomme metoder der skal inluderes af dens subklasser.
+Interface klasser har også final atributter, dvs. man kan ikke erklære dem uden at instantiere dem, derfor bruger vi oftest Abstract klasser til dette.
+
+Edible er en interface klasse fordi den skal nedarve metoder til både Fruit OG specifikke Animal klasser da både fruit(abstract) og Chicken(subklasse til Animal) kan spises. Derfor kan både chicken og fruit implementere edible.
+
